@@ -2,36 +2,36 @@
 body {
     background-color: #f8f8f8;
     color: #333;
-    font-family: Lato, sans-serif;
+    font-family: "Lato", sans-serif;
 }
-.aaa {
+.head {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.aaa img {
+.head img {
     width: 100%;
 }
-.aaa .more-inf {
-    font-family: fantasy, cursive;
+.head .head__more-info {
+    font-family: "fantasy", cursive;
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
+.head { text-align: center;
 }
 }
-.centered-main-page-element {
+.todo-list {
     display: block;
     width: 500px;
     margin: 0 auto 0;
 }
-.task {
+.todo-list__task {
     width: 56%;
     display: inline-block;
     flex-grow: 1
 }
-.task-row-wrapper {
+.todo-list__wrapper {
     display: flex;
 }
 ul {
@@ -50,7 +50,7 @@ button {
     color: #888;
     font-size: 15px;
     width: 60px;
-    font-family: Lato, sans-serif;
+    font-family: "Lato", sans-serif;
     cursor: pointer;
 }
 button:hover {
@@ -58,7 +58,7 @@ button:hover {
 }
 /* Heading */
 h3,
-label[for="new-task"] {
+label[for='todo-list__new-task'] {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -76,7 +76,7 @@ input[type="text"] {
     border: 1px solid #dDd;
     background: #FFF;
     border-radius: 6px;
-    font-family: Lato, sans-serif;
+    font-family: "Lato", sans-serif;
     color: #888;
 }
 input[type="text"]:focus {
@@ -84,11 +84,11 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="new-task"] {
+label[for='todo-list__new-task'] {
     display: block;
     margin: 0 0 20px;
 }
-input#new-task {
+input#todo-list__new-task {
     width: 318px;
 }
 
@@ -97,7 +97,6 @@ li {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -105,7 +104,6 @@ li {
 li > * {
     vertical-align: middle;
 }
-
 li > input[type="checkbox"] {
     margin: 0 10px;
 }
@@ -118,31 +116,30 @@ li > label {
 li >    input[type="text"] {
     width: 226px
 }
-button.delete img {
+button.todo-list__delete-btn img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+button.todo-list__delete-btn img:hover {
     transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+ul#todo-list__completed-section label {
     text-decoration: line-through
     color: #888;
 }
-
 /* Edit Task */
-ul li input[type="text"] {
+ul li input[type=text] {
     display:none
 }
 
-ul li.edit-mode input[type="text"] {
+ul li.todo-list__edit-section input[type=text] {
     display:inline-block;
     width:224px
 }
 
-ul li.edit-mode label {
+ul li.todo-list__edit-section label {
     display:none;
 }

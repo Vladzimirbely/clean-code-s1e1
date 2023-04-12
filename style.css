@@ -36,7 +36,7 @@ body {
 .todo-list__input-task {
     width: 56%;
     display: inline-block;
-    flex-grow: 1
+    flex-grow: 1;
 }
 
 .todo-list__wrapper {
@@ -147,7 +147,7 @@ li > .todo-list__task {
 }
 
 li >    #todo-list__task {
-    width: 100%
+    width: 100%;
 }
 
 .todo-list__del-btn img {
@@ -162,13 +162,13 @@ li >    #todo-list__task {
 
 /* Completed */
 #todo-list__completed-section label {
-    text-decoration: line-through
+    text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
 .todo-list__input-task {
-    display: none
+    display: none;
 }
 
 .todo-list__input-task {
@@ -179,7 +179,7 @@ li >    #todo-list__task {
 .todo-list__completed-section .todo-list__input-task,
 .todo-list__wrapper #todo-list__new-task {
     display: inline-block;
-    width: 224px
+    width: 224px;
 }
 
 .todo-list__edit-section label {

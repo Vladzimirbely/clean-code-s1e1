@@ -6,23 +6,23 @@
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
 <body>
-  <div class="head">
+  <aside class="head">
     <img src="./eisenhower-matrix.jpg">
     <a class="head__more-info" 
         href="https://goal-life.com/page/method/matrix-eisenhower">
         Want more details?
     </a>
-  </div>
-  <div class="todo-list">
-    <p id="todo-list__adding-section">
+  </aside>
+  <article class="todo-list">
+    <section id="todo-list__adding-section">
       <label for="todo-list__new-task" class="todo-list__label-task">Add Item</label>
-      <div class="todo-list__wrapper">
+      <aside class="todo-list__wrapper">
         <input id="todo-list__new-task" class="todo-list__input-task" type="text">
         <button class="todo-list__add-btn">Add</button>
-      </div>
-    </p>
+      </aside>
+    </section>
     <h3 class="todo-list__header">Todo</h3>
-    <ul id="todo-list__todo-section">
+    <section id="todo-list__todo-section">
       <li id="todo-section__li">
         <input type="checkbox" class="todo-list__input-check">
         <label class="todo-list__task">Pay Bills</label>
@@ -37,9 +37,9 @@
         <button class="todo-list__edit-btn">Save</button>
         <button class="todo-list__del-btn"><img src="./remove.svg"></button>
       </li>
-    </ul>
+    </section>
     <h3 class="todo-list__header">Completed</h3>
-    <ul id="todo-list__completed-section">
+    <section id="todo-list__completed-section">
       <li id="todo-section__li">
         <input type="checkbox" class="todo-list__input-check" checked>
         <label class="todo-list__task">See the Doctor</label>
@@ -47,8 +47,8 @@
         <button class="todo-list__edit-btn">Edit</button>
         <button class="todo-list__del-btn"><img src="./remove.svg"></button>
       </li>
-    </ul>
-  </div>
+    </section>
+  </article>
   <script src="app.js"></script>
 </body>
 </html>

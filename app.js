@@ -3,15 +3,11 @@
 //Problem: User interaction does not provide the correct results.
 //Solution: Add interactivity so the user can manage daily tasks.
 //Break things down into smaller steps and take each step at a time.
-
 // Event handling, user interaction is what starts the code execution.
-
 var taskInput=document.getElementById("todo-list__new-task");//Add a new task.
 var addButton=document.getElementsByTagName("button")[0];//first button
 var incompleteTaskHolder=document.getElementById("todo-list__todo-section");//ul of #incompleteTasks
 var completedTasksHolder=document.getElementById("todo-list__completed-section");//completed-tasks
-
-
 //New task list item
 var createNewTaskElement=function(taskString){
     var listItem=document.createElement("li");
@@ -26,19 +22,16 @@ var createNewTaskElement=function(taskString){
     //button.delete
     var deleteButton=document.createElement("button");//delete button
     var deleteButtonImg=document.createElement("img");//delete button image
-
     label.innerText=taskString;
     label.className='todo-list__task';
-
     //Each elements, needs appending
     checkBox.type="checkbox";
     editInput.type="text";
     editInput.className="todo-list__task";
-
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="todo-list__edit-btn";
 
-    deleteButton.className="todo-list__delete-btn";
+    deleteButton.className="todo-list__del-btn";
     deleteButtonImg.src='./remove.svg';
     deleteButton.appendChild(deleteButtonImg);
 
@@ -65,14 +58,12 @@ var editTask=function(){
     console.log("Edit Task...");
     console.log("Change 'edit' to 'save'");
     var listItem=this.parentNode;
-
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".todo-list__edit-btn");
     var containsClass=listItem.classList.contains("todo-list__edit-section");
     //If class of the parent is .editmode
     if(containsClass){
-
         //switch to .editmode
         //label becomes the inputs value.
         label.innerText=editInput.value;
@@ -81,12 +72,9 @@ var editTask=function(){
         editInput.value=label.innerText;
         editBtn.innerText="Save";
     }
-
     //toggle .editmode on the parent.
     listItem.classList.toggle("todo-list__edit-section");
 };
-
-
 //Delete task.
 var deleteTask=function(){
     console.log("Delete Task...");
@@ -125,7 +113,7 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
 //select ListItems children
     var checkBox=taskListItem.querySelector("input[type=checkbox]");
     var editButton=taskListItem.querySelector("button.todo-list__edit-btn");
-    var deleteButton=taskListItem.querySelector("button.todo-list__delete-btn");
+    var deleteButton=taskListItem.querySelector("button.todo-list__del-btn");
 
 
     //Bind editTask to edit button.

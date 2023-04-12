@@ -16,7 +16,6 @@ body {
 .head .head__more-info {
     font-family: "fantasy", cursive;
 }
-
 @media (max-width:768px) {
 .head { text-align: center;
 }
@@ -82,7 +81,6 @@ input[type="text"] {
 input[type="text"]:focus {
     color: #333;
 }
-
 /* New Task */
 label[for='todo-list__new-task'] {
     display: block;
@@ -91,7 +89,6 @@ label[for='todo-list__new-task'] {
 input#todo-list__new-task {
     width: 318px;
 }
-
 /* Task list */
 li {
     overflow: hidden;
@@ -116,12 +113,12 @@ li > label {
 li >    input[type="text"] {
     width: 226px
 }
-button.todo-list__delete-btn img {
+button.todo-list__del-btn img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-button.todo-list__delete-btn img:hover {
+button.todo-list__del-btn img:hover {
     transform: rotateZ(0);
 }
 
@@ -134,12 +131,10 @@ ul#todo-list__completed-section label {
 ul li input[type=text] {
     display:none
 }
-
 ul li.todo-list__edit-section input[type=text] {
     display:inline-block;
     width:224px
 }
-
 ul li.todo-list__edit-section label {
     display:none;
 }

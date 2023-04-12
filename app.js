@@ -24,17 +24,19 @@ var createNewTaskElement=function(taskString){
     var deleteButtonImg=document.createElement("img");//delete button image
     label.innerText=taskString;
     label.className='todo-list__task';
+
     //Each elements, needs appending
     checkBox.type="checkbox";
+    checkBox.className='todo-list__input-check';
     editInput.type="text";
-    editInput.className="todo-list__task";
+    editInput.className="todo-list__input-task";
+    editInput.id="todo-list__task";
+
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="todo-list__edit-btn";
-
     deleteButton.className="todo-list__del-btn";
     deleteButtonImg.src='./remove.svg';
     deleteButton.appendChild(deleteButtonImg);
-
     //and appending.
     listItem.appendChild(checkBox);
     listItem.appendChild(label);
@@ -114,8 +116,6 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     var checkBox=taskListItem.querySelector("input[type=checkbox]");
     var editButton=taskListItem.querySelector("button.todo-list__edit-btn");
     var deleteButton=taskListItem.querySelector("button.todo-list__del-btn");
-
-
     //Bind editTask to edit button.
     editButton.onclick=editTask;
     //Bind deleteTask to delete button.

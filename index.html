@@ -15,35 +15,35 @@
   </div>
   <div class="todo-list">
     <p id="todo-list__adding-section">
-      <label for="todo-list__new-task">Add Item</label>
+      <label for="todo-list__new-task" class="todo-list__label-task">Add Item</label>
       <div class="todo-list__wrapper">
-        <input id="todo-list__new-task"class="todo-list__task" type="text">
-        <button>Add</button>
+        <input id="todo-list__new-task" class="todo-list__input-task" type="text">
+        <button class="todo-list__add-btn">Add</button>
       </div>
     </p>
-    <h3>Todo</h3>
+    <h3 class="todo-list__header">Todo</h3>
     <ul id="todo-list__todo-section">
-      <li>
-        <input type="checkbox">
+      <li id="todo-section__li">
+        <input type="checkbox" class="todo-list__input-check">
         <label class="todo-list__task">Pay Bills</label>
-        <input type="text" class="todo-list__task">
+        <input type="text" id="todo-list__task" class="todo-list__input-task">
         <button class="todo-list__edit-btn">Edit</button>
         <button class="todo-list__del-btn"><img src="./remove.svg"></button>
       </li>
-      <li class="todo-list__edit-section">
-        <input type="checkbox">
+      <li id="todo-section__li" class="todo-list__edit-section">
+        <input type="checkbox" class="todo-list__input-check">
         <label class="todo-list__task">Go Shopping</label>
-        <input type="text" value="Go Shopping" class="todo-list__task">
+        <input type="text" id="todo-list__task" value="Go Shopping" class="todo-list__input-task">
         <button class="todo-list__edit-btn">Save</button>
         <button class="todo-list__del-btn"><img src="./remove.svg"></button>
       </li>
     </ul>
-    <h3>Completed</h3>
+    <h3 class="todo-list__header">Completed</h3>
     <ul id="todo-list__completed-section">
-      <li>
-        <input type="checkbox" checked>
+      <li id="todo-section__li">
+        <input type="checkbox" class="todo-list__input-check" checked>
         <label class="todo-list__task">See the Doctor</label>
-        <input type="text" class="todo-list__task">
+        <input type="text" id="todo-list__task" class="todo-list__input-task">
         <button class="todo-list__edit-btn">Edit</button>
         <button class="todo-list__del-btn"><img src="./remove.svg"></button>
       </li>

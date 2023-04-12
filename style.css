@@ -20,7 +20,7 @@ body {
     font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
     .head { text-align: center;
     }
@@ -45,20 +45,20 @@ body {
 
 #todo-list__todo-section,
 #todo-list__completed-section {
-    margin:0;
+    margin: 0;
     padding: 0px;
 }
 
 #todo-section__li, 
 .todo-list__header {
-    list-style:none;
+    list-style: none;
 }
 
 input,
 .todo-list__add-btn,
 .todo-list__edit-btn,
 .todo-list__del-btn {
-    outline:none;
+    outline: none;
 }
 
 .todo-list__add-btn,
@@ -168,7 +168,7 @@ li >    #todo-list__task {
 
 /* Edit Task */
 .todo-list__input-task {
-    display:none
+    display: none
 }
 
 .todo-list__input-task {
@@ -178,10 +178,10 @@ li >    #todo-list__task {
 .todo-list__edit-section .todo-list__input-task,
 .todo-list__completed-section .todo-list__input-task,
 .todo-list__wrapper #todo-list__new-task {
-    display:inline-block;
-    width:224px
+    display: inline-block;
+    width: 224px
 }
 
 .todo-list__edit-section label {
-    display:none;
+    display: none;
 }

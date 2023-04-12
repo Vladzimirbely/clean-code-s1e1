@@ -4,51 +4,63 @@ body {
     color: #333;
     font-family: Lato, sans-serif;
 }
+
 .head {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
+
 .head img {
     width: 100%;
 }
+
 .head .head__more-info {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.head { text-align: center;
+
+    .head { text-align: center;
+    }
+
 }
-}
+
 .todo-list {
     display: block;
     width: 500px;
     margin: 0 auto 0;
 }
+
 .todo-list__input-task {
     width: 56%;
     display: inline-block;
     flex-grow: 1
 }
+
 .todo-list__wrapper {
     display: flex;
 }
+
 #todo-list__todo-section,
 #todo-list__completed-section {
     margin:0;
     padding: 0px;
 }
+
 #todo-section__li, 
 .todo-list__header {
     list-style:none;
 }
+
 input,
 .todo-list__add-btn,
 .todo-list__edit-btn,
 .todo-list__del-btn {
     outline:none;
 }
+
 .todo-list__add-btn,
 .todo-list__edit-btn,
 .todo-list__del-btn {
@@ -61,11 +73,13 @@ input,
     cursor: pointer;
     padding-left: 10px;
 }
+
 .todo-list__add-btn:hover,
 .todo-list__edit-btn:hover,
 .todo-list__del-btn:hover {
     color: #3a3A3a;
 }
+
 /* Heading */
 .todo-list__header,
 .todo-list__label-task {
@@ -77,6 +91,7 @@ input,
     margin: 0;
     text-transform: uppercase;
 }
+
 #todo-list__task,
 .todo-list__wrapper #todo-list__new-task {
     margin: 0;
@@ -90,6 +105,7 @@ input,
     font-family: Lato, sans-serif;
     color: #888;
 }
+
 #todo-list__task:focus,
 #todo-list__new-task:focus {
     color: #333;
@@ -100,6 +116,7 @@ input,
     display: block;
     margin: 0 0 20px;
 }
+
 .todo-list__wrapper #todo-list__new-task {
     width: 318px;
 }
@@ -113,6 +130,7 @@ li {
     justify-content: space-between;
     align-items: center;
 }
+
 li > * {
     vertical-align: middle;
 }
@@ -120,20 +138,24 @@ li > * {
 li > .todo-list__input-check {
     margin: 0 10px;
 }
+
 li > .todo-list__task {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 100%;
 }
+
 li >    #todo-list__task {
     width: 100%
 }
+
 .todo-list__del-btn img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
+
 .todo-list__del-btn img:hover {
     transform: rotateZ(0);
 }
